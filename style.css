@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body {
+    color: white;
+    background-color: black;
+}
+.container {
+    padding: 8px;
+    gap: 6px;
+}
+.left {
+    width: 25vw;
+    gap: 4px;
+    font-weight: 700;
+}
+
+.right {
+    width: 75vw;
+    background-color: #121212;
+}
+
+.home {
+    padding: 16px;
+    gap: 2px;
+}
+.home ul li {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    list-style: none;
+    width: 22px;
+}
+
+.library {
+    height: 70vh;
+    padding: 16px;
+    gap: 2px;
+    position: relative;
+}
+.library-heading {
+    gap: 10px;
+}
+.library-heading img {
+    width: 22px;
+}
+.library-heading h2 {
+    font-size: 16px
+}
+.footer {
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #090909;
+}
+
+.spotify-playlist {
+    padding: 6px 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 16px;
+    background-color: #161616;
+}
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+.card .head {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.card p {
+    color: grey;
+    font-size: 14px;
+}

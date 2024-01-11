@@ -1,0 +1,40 @@
+.border {
+    border: 1px solid red;
+}
+
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+.rounded {
+    border-radius: 8px;
+}
+.width100 {
+    width: 100%;
+}
+
+.p-1 {
+    padding: 4px;
+}
+
+.m-1 {
+    margin: 4px;
+}
