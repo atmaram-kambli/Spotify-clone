@@ -9,21 +9,40 @@
     <title>Spotify - Web Player</title>
 </head>
 <body>
-    <div class="container flex border">
+    <div class="container flex  ">
         <div class="left flex flex-column">
-            <div class="home flex flex-column bg-grey border rounded">
-                <div class="logo">
-                    <img class="invert" src="logo.svg" alt="logo">
+            <img class="invert svg-w close" src="close-icon.svg" alt="">
+            <div class="home flex flex-column bg-grey rounded">
+                <div class="logo-div">
+                    <img class="invert" width="90" src="logo.svg" alt="logo">
                 </div>
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
-                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
+                    <li><img class="invert" width="80" src="home.svg" alt="Home">Home</li>
+                    <li><img class="invert" width="80" src="search.svg" alt="Search">Search</li>
                 </ul>
             </div>
-            <div class="library bg-grey border rounded">
+            <div class="library bg-grey rounded">
                 <div class="library-heading flex align-items">
                     <img class="invert" src="library.svg" alt="Library">
                     <h2 >Your Library</h2>
+                </div>
+                <div class="songs-library rounded">
+                    <ul>
+                        <!-- <li>
+                            <div class="song-card rounded">
+                                <img class="invert svg-w" src="music.svg" alt="">
+                                <div class="song-info">
+                                    <div class="song-name">Song Name</div>
+                                    <div class="singer">Ak</div>
+                                </div>
+                                <div class="play-song">
+                                    <span>Play now</span>
+                                    <img class="invert svg-w" id='play-s' src="play1.svg" alt="">
+                                </div>
+                            </div>
+                        </li> -->
+
+                    </ul>
                 </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -37,47 +56,80 @@
             </div>
 
         </div>
-        <div class="right border rounded bg-grey">
-            <div class="header rounded">
+        <div class="right rounded bg-grey">
+            <div class="header">
                 <div class="nav">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
+                    <img class="invert svg-w hamburger" src="hamburger.svg" alt="">
+                    <div >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
                             d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
                             d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+                        </svg>
+                    </div>
                 </div>
-                <div class="btn">
-                    <button>Sign up</button>
-                    <button>Log in</button>
+                <div class="btns">
+                    <button class="btn sign-up">Sign up</button>
+                    <button class="btn log-in">Log in</button>
                 </div>
             </div>
             <div class="spotify-playlist">
                 <h2>Spotify Playlists</h2>
                 <div class="card-container">
-                    <div class="card border">
-                        <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-gray-800 dark:text-white" aria-hidden="true" style="background-color: green; border-radius: 10px; padding: 2px;">
-                            <rect width="100%" height="100%" rx="10px" fill="green"/>
-                            <path d="M2 1v14a1 1 0 0 0 1.5.87L16 11 3.5 0 2 1zm1 1l11 9-10.53 5.8A1 1 0 0 1 3 16V2z" fill="black" style="padding: 4px;"/>
-                        </svg>
-                        
-                        
-                        
-                        
-                        
-                        <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                    <div data-folder="ncr" data-i="i" class="card rounded">
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                        <div class="play">
+                            <svg width="50" height="50" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
+                                <rect x="2%" y="2%" width="96%" height="96%" fill="#1FC255" rx="50"></rect>
+                                <path d="m7 4.5 5 2.5a.7.7 0 0 1 0 1.212l-5 2.5a.7.7 0 0 1-1 0v-6a.7.7 0 0 1 1-.212z" transform="translate(4, 4)"></path>
+                            </svg>
+                        </div>                                     
                         <p class="head">Dinner with Friends</p>
                         <p>The perfect soundtrack to those long nights over dinner</p>
                     </div>
+                    <div data-folder="cr" class="card rounded">
+                        <img class="rounded" src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                        <div class="play">
+                            <svg width="50" height="50" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
+                                <rect x="2%" y="2%" width="96%" height="96%" fill="#1FC255" rx="50"></rect>
+                                <path d="m7 4.5 5 2.5a.7.7 0 0 1 0 1.212l-5 2.5a.7.7 0 0 1-1 0v-6a.7.7 0 0 1 1-.212z" transform="translate(4, 4)"></path>
+                            </svg>
+                        </div>                                     
+                        <p class="head">Dinner with Friends</p>
+                        <p>The perfect soundtrack to those long nights over dinner</p>
+                    </div>
+                    
                 </div>
             </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div> 
+                </div>
+                <div class="current-song"></div>
+                <div class="play-btns">
+                    <img id="prev" class="song-btn invert" src="previous.svg" alt="previous song">
+                    <img id="play" class="song-btn invert" src="play.svg" alt="play">
+                    <img id="next" class="song-btn invert" src="next.svg" alt="next song">
+                </div>
+                <div class="time-volume">
+                    <div class="volume">
+                        <img class="invert svg-w" src="sound.svg" alt="">
+                        <input type="range" value="50">
+                    </div>
+                    <div class="song-time"></div>
+                </div>
+            </div>
+            
         </div>
     </div>
         
     
+    <script src="script.js"></script>
 </body>
 </html>
