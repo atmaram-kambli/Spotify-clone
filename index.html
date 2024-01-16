@@ -4,40 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
     <title>Spotify - Web Player</title>
 </head>
 <body>
     <div class="container flex  ">
         <div class="left flex flex-column">
-            <img class="invert svg-w close" src="close-icon.svg" alt="">
+            <img class="invert svg-w close" src="assets/close-icon.svg" alt="">
             <div class="home flex flex-column bg-grey rounded">
                 <div class="logo-div">
-                    <img class="invert" width="90" src="logo.svg" alt="logo">
+                    <img class="invert" width="90" src="assets/logo.svg" alt="logo">
                 </div>
                 <ul>
-                    <li><img class="invert" width="80" src="home.svg" alt="Home">Home</li>
-                    <li><img class="invert" width="80" src="search.svg" alt="Search">Search</li>
+                    <li><img class="invert" width="80" src="assets/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" width="80" src="assets/search.svg" alt="Search">Search</li>
                 </ul>
             </div>
             <div class="library bg-grey rounded">
                 <div class="library-heading flex align-items">
-                    <img class="invert" src="library.svg" alt="Library">
+                    <img class="invert" src="assets/library.svg" alt="Library">
                     <h2 >Your Library</h2>
                 </div>
                 <div class="songs-library rounded">
                     <ul>
                         <!-- <li>
                             <div class="song-card rounded">
-                                <img class="invert svg-w" src="music.svg" alt="">
+                                <img class="invert svg-w" src="assets/music.svg" alt="">
                                 <div class="song-info">
                                     <div class="song-name">Song Name</div>
                                     <div class="singer">Ak</div>
                                 </div>
                                 <div class="play-song">
                                     <span>Play now</span>
-                                    <img class="invert svg-w" id='play-s' src="play1.svg" alt="">
+                                    <img class="invert svg-w" id='play-s' src="assets/play1.svg" alt="">
                                 </div>
                             </div>
                         </li> -->
@@ -59,7 +59,7 @@
         <div class="right rounded bg-grey">
             <div class="header">
                 <div class="nav">
-                    <img class="invert svg-w hamburger" src="hamburger.svg" alt="">
+                    <img class="invert svg-w hamburger" src="assets/hamburger.svg" alt="">
                     <div >
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -81,29 +81,17 @@
             <div class="spotify-playlist">
                 <h2>Spotify Playlists</h2>
                 <div class="card-container">
-                    <div data-folder="ncr" data-i="i" class="card rounded">
-                        <img class="rounded" src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
-                        <div class="play">
-                            <svg width="50" height="50" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
+                    <!-- <div data-folder="ncr" class="card rounded">
+                        <div class="play-father">
+                            <img class="rounded" src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+                            <svg class="play" width="50" height="50" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
                                 <rect x="2%" y="2%" width="96%" height="96%" fill="#1FC255" rx="50"></rect>
                                 <path d="m7 4.5 5 2.5a.7.7 0 0 1 0 1.212l-5 2.5a.7.7 0 0 1-1 0v-6a.7.7 0 0 1 1-.212z" transform="translate(4, 4)"></path>
                             </svg>
                         </div>                                     
                         <p class="head">Dinner with Friends</p>
                         <p>The perfect soundtrack to those long nights over dinner</p>
-                    </div>
-                    <div data-folder="cr" class="card rounded">
-                        <img class="rounded" src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
-                        <div class="play">
-                            <svg width="50" height="50" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
-                                <rect x="2%" y="2%" width="96%" height="96%" fill="#1FC255" rx="50"></rect>
-                                <path d="m7 4.5 5 2.5a.7.7 0 0 1 0 1.212l-5 2.5a.7.7 0 0 1-1 0v-6a.7.7 0 0 1 1-.212z" transform="translate(4, 4)"></path>
-                            </svg>
-                        </div>                                     
-                        <p class="head">Dinner with Friends</p>
-                        <p>The perfect soundtrack to those long nights over dinner</p>
-                    </div>
-                    
+                    </div> -->
                 </div>
             </div>
 
@@ -113,13 +101,13 @@
                 </div>
                 <div class="current-song"></div>
                 <div class="play-btns">
-                    <img id="prev" class="song-btn invert" src="previous.svg" alt="previous song">
-                    <img id="play" class="song-btn invert" src="play.svg" alt="play">
-                    <img id="next" class="song-btn invert" src="next.svg" alt="next song">
+                    <img id="prev" class="song-btn invert" src="assets/previous.svg" alt="previous song">
+                    <img id="play" class="song-btn invert" src="assets/play.svg" alt="play">
+                    <img id="next" class="song-btn invert" src="assets/next.svg" alt="next song">
                 </div>
                 <div class="time-volume">
                     <div class="volume">
-                        <img class="invert svg-w" src="sound.svg" alt="">
+                        <img class="invert svg-w" src="assets/sound.svg" alt="">
                         <input type="range" value="50">
                     </div>
                     <div class="song-time"></div>
@@ -130,6 +118,6 @@
     </div>
         
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
